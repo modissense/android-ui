@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/grey"
+              android:orientation="vertical">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:orientation="vertical">
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:padding="0dp">
+
+            <FrameLayout
+                    android:id="@+id/mapView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+            </FrameLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2sp"
+            android:layout_marginLeft="2sp"
+            android:layout_marginRight="2sp"
+            android:layout_marginTop="2sp"
+            android:layout_weight="50"
+            android:scrollbars="none">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140sp"
+                    android:background="@color/white">
+
+                <TextView
+                        android:id="@+id/poi_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="2sp"
+                        android:singleLine="true"
+                        android:text="This is my header"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        />
+
+                <ImageView
+
+                        android:id="@+id/poi_icon"
+                        android:layout_width="60sp"
+                        android:layout_height="60sp"
+                        android:layout_below="@+id/poi_name"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5sp"
+                        android:paddingTop="5sp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_launcher"
+                        />
+
+                <TextView
+                        android:id="@+id/poi_description"
+                        android:paddingTop="5sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginTop="5sp"
+                        android:layout_below="@+id/poi_name"
+
+                        android:layout_toRightOf="@+id/poi_icon"
+                        android:singleLine="true"
+                        android:text="This is my description"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+
+                <TextView
+                        android:id="@+id/poi_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/poi_description"
+                        android:layout_toRightOf="@+id/poi_icon"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="3sp"
+                        android:maxLines="2"
+                        android:text="Patron Athinon 205, Ellada"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"/>
+
+                <TextView
+                        android:id="@+id/poi_visits"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginTop="2sp"
+                        android:background="@drawable/round_rect_distance"
+                        android:singleLine="true"
+                        android:text="This is the small text"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:textStyle="italic"/>
+
+                <TextView
+                        android:id="@+id/poi_comments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginTop="2sp"
+                        android:layout_marginBottom="2sp"
+                        android:background="@drawable/round_rect_distance"
+                        android:singleLine="true"
+                        android:text="This is the small text 33"
+
+
+
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:textStyle="italic"/>
+
+                <RatingBar
+                        android:id="@+id/poi_interest"
+                        style="@style/small_ratingbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3sp"
+                        android:layout_marginLeft="5sp"
+                        android:rating="5"
+                        android:isIndicator="true"
+                        android:layout_alignLeft="@+id/poi_description"
+                        android:layout_below="@+id/poi_address"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140sp"
+                    android:layout_marginTop="2sp"
+                    android:background="@color/white">
+
+                <TextView
+                        android:id="@+id/friend_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="2sp"
+                        android:layout_marginBottom="2sp"
+                        android:singleLine="true"
+                        android:text="This is my header"
+                        android:textColor="@color/blue"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        />
+
+                <ImageView
+
+                        android:id="@+id/friend_icon"
+                        android:layout_width="60sp"
+                        android:layout_height="60sp"
+                        android:layout_below="@+id/friend_name"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5sp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_launcher"
+                        />
+
+                <TextView
+                        android:id="@+id/friend_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginTop="5sp"
+                        android:layout_below="@+id/friend_name"
+
+                        android:layout_toRightOf="@+id/friend_icon"
+                        android:singleLine="true"
+                        android:text="This is my description"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+
+                <TextView
+                        android:id="@+id/friend_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/friend_description"
+                        android:layout_toRightOf="@+id/friend_icon"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="3sp"
+                        android:maxLines="2"
+                        android:text="Patron Athinon 205, Ellada"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"/>
+
+                <TextView
+                        android:id="@+id/friend_visits"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginTop="2sp"
+                        android:background="@drawable/round_rect_distance"
+                        android:singleLine="true"
+                        android:text="This is the small text"
+                        android:textColor="@color/white"
+                        android:textSize="13sp"
+                        android:textStyle="italic"/>
+
+                <RatingBar
+                        android:id="@+id/friend_interest"
+                        style="@style/small_ratingbar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3sp"
+                        android:layout_marginLeft="5sp"
+                        android:rating="5"
+                        android:isIndicator="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5sp"
+                        android:layout_below="@+id/friend_visits"/>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

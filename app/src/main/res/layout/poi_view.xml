@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal" >
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+        <LinearLayout
+                android:id="@+id/layout_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+            <TextView
+                    android:id="@+id/poi_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/poi_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+
+            <TextView
+                    android:id="@+id/poi_interest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/blue"
+
+                    />
+
+
+            <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="@style/small_ratingbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1sp"
+
+                    android:stepSize="0.5"
+                    android:rating="5"
+                    android:isIndicator="true"
+                    />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+              <!--android:layout_width="wrap_content"-->
+              <!--android:layout_height="wrap_content"-->
+              <!--android:layout_gravity="center_vertical|center_horizontal"-->
+              <!--android:background="#ADD8E6"-->
+              <!--android:gravity="center_vertical|center_horizontal"-->
+              <!--android:orientation="horizontal" >-->
+
+    <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:contentDescription="@string/app_name"-->
+            <!--android:src="@drawable/icon" />-->
+
+    <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical" >-->
+
+        <!--<TextView-->
+                <!--android:id="@+id/poi_name"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="5dp"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:textSize="15sp" />-->
+
+        <!--<TextView-->
+                <!--android:id="@+id/poi_description"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="5dp"-->
+                <!--android:textColor="@android:color/black"-->
+                <!--android:textSize="10sp"-->
+                <!--android:textStyle="bold" />-->
+
+        <!--<TextView-->
+                <!--android:id="@+id/poi_coords"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                <!--android:textColor="@color/table_text_light"-->
+                <!--/>-->
+        <!--<TextView-->
+                <!--android:id="@+id/poi_interest"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                <!--android:textColor="@color/table_text_light"-->
+                <!--/>-->
+        <!--<TextView-->
+                <!--android:id="@+id/poi_hotness"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                <!--android:textColor="@color/table_text_light"-->
+                <!--/>-->
+
+        <!--<TextView-->
+                <!--android:id="@+id/poi_keywords"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                <!--android:textColor="@color/table_text_light"-->
+                <!--/>-->
+
+        <!--<TextView-->
+                <!--android:id="@+id/poi_publicity"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                <!--android:textColor="@color/table_text_light"-->
+                <!--/>-->
+
+        <!--<RatingBar-->
+                <!--android:id="@+id/ratingBar1"-->
+                <!--style="@style/small_ratingbar"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="1sp"-->
+                <!--android:layout_marginBottom="1sp"-->
+                <!--android:stepSize="0.5"-->
+                <!--android:rating="5"-->
+                <!--android:isIndicator="true"-->
+                <!--/>-->
+
+        <!--<Button-->
+                <!--android:id="@+id/poi_remove"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Delete"/>-->
+    <!--</LinearLayout>-->
+
+<!--</LinearLayout>-->
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+
+<!--<ScrollView-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+    <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical"-->
+            <!--android:paddingBottom="5dp"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingRight="10dp"-->
+            <!--android:paddingTop="5dp">-->
+
+        <!--<TextView-->
+                <!--android:id="@+id/poi_name"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+                <!--android:textColor="@color/table_text"-->
+                <!--android:singleLine="true"-->
+                <!--/>-->
+
+        <!--<TextView-->
+                <!--android:id="@+id/poi_description"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                <!--android:textColor="@color/table_text_light"-->
+                <!--/>-->
+
+        <!--<TextView-->
+                <!--android:id="@+id/poi_coords"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                <!--android:textColor="@color/table_text_light"-->
+                <!--/>-->
+        <!--<TextView-->
+                <!--android:id="@+id/poi_interest"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                <!--android:textColor="@color/table_text_light"-->
+                <!--/>-->
+        <!--<TextView-->
+                <!--android:id="@+id/poi_hotness"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                <!--android:textColor="@color/table_text_light"-->
+                <!--/>-->
+
+        <!--<TextView-->
+                <!--android:id="@+id/poi_keywords"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                <!--android:textColor="@color/table_text_light"-->
+                <!--/>-->
+
+        <!--<TextView-->
+                <!--android:id="@+id/poi_publicity"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                <!--android:textColor="@color/table_text_light"-->
+                <!--/>-->
+
+        <!--<RatingBar-->
+                <!--android:id="@+id/ratingBar1"-->
+                <!--style="@style/small_ratingbar"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="1sp"-->
+                <!--android:layout_marginBottom="1sp"-->
+                <!--android:stepSize="0.5"-->
+                <!--android:rating="5"-->
+                <!--android:isIndicator="true"-->
+                <!--/>-->
+
+        <!--<Button-->
+                <!--android:id="@+id/poi_remove"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Delete"/>-->
+
+
+    <!--</LinearLayout>-->
+
+
+<!--</ScrollView>-->

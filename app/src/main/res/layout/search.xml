@@ -1,0 +1,341 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_view"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/edit_name"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="50sp" >
+
+            <ImageView
+                    android:id="@+id/img_icon1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5sp"
+                    android:src="@drawable/search"
+                    />
+
+            <EditText
+                    android:id="@+id/keywords"
+                    android:hint="Keywords"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_toLeftOf="@+id/img_indicator1"
+                    android:layout_toRightOf="@+id/img_icon1"
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            <ImageView
+                    android:id="@+id/img_indicator1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5sp"
+                    android:src="@drawable/ic_action_next_item"
+                    android:visibility="invisible"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="50sp"
+                android:layout_marginTop="1dp">
+
+            <ImageView
+                    android:id="@+id/img_icon2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5sp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/from"
+                    />
+
+            <EditText
+                    android:id="@+id/dateStart"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:inputType="text"
+                    android:hint="@string/pick_date_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_toLeftOf="@+id/img_indicator2"
+                    android:layout_toRightOf="@+id/img_icon2"
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            <ImageView
+                    android:id="@+id/img_indicator2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5sp"
+                    android:src="@drawable/ic_action_next_item" />
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="50sp"
+                android:layout_marginTop="1dp">
+
+            <ImageView
+                    android:id="@+id/img_icon3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5sp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/to"
+                    />
+
+            <EditText
+                    android:id="@+id/dateEnd"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:inputType="text"
+                    android:hint="@string/pick_date_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_toLeftOf="@+id/img_indicator3"
+                    android:layout_toRightOf="@+id/img_icon3"
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            <ImageView
+                    android:id="@+id/img_indicator3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5sp"
+                    android:src="@drawable/ic_action_next_item" />
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="50sp"
+                android:layout_marginTop="1dp">
+
+            <ImageView
+                    android:id="@+id/img_icon4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5sp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/friends"
+                    />
+
+            <EditText
+                    android:id="@+id/friends"
+                    android:layout_marginTop="@dimen/element_spacing_normal"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="Friends"
+                    android:enabled="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_toLeftOf="@+id/img_indicator4"
+                    android:layout_toRightOf="@+id/img_icon4"
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            <ImageView
+                    android:id="@+id/img_indicator4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5sp"
+                    android:src="@drawable/ic_action_next_item" />
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="50sp"
+                android:layout_marginTop="1dp">
+
+            <ImageView
+                    android:id="@+id/img_icon5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5sp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/feed"
+                    />
+            <gr.modissense.ui.view.TriToggleButton
+                    android:id="@+id/sortToggleButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_toLeftOf="@+id/img_indicator5"
+                    android:layout_toRightOf="@+id/img_icon5" />
+
+
+            <ImageView
+                    android:id="@+id/img_indicator5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5sp"
+                    android:src="@drawable/ic_action_next_item" />
+        </RelativeLayout>
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="50sp"
+                android:layout_marginTop="1dp">
+
+            <ImageView
+                    android:id="@+id/img_icon6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5sp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hash"
+                    />
+            <TextView
+                    style="@style/Search"
+                    android:id="@+id/seekBarValue"
+                    android:text="Number of results"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_toLeftOf="@+id/img_indicator6"
+                    android:layout_toRightOf="@+id/img_icon6"
+                    android:maxLines="2"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+
+            <ImageView
+                    android:id="@+id/img_indicator6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5sp"
+                    android:src="@drawable/ic_action_next_item"
+                    android:visibility="invisible"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="50sp"
+                android:layout_marginTop="1dp">
+
+            <ImageView
+                    android:id="@+id/img_icon7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5sp"
+                    android:scaleType="fitXY"
+                    />
+            <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_toLeftOf="@+id/img_indicator7"
+                    android:layout_toRightOf="@+id/img_icon7"
+                    android:id="@+id/seekBar"
+                    android:layout_gravity="center"
+                    android:max="100"
+                    android:progress="10" />
+
+
+
+            <ImageView
+                    android:id="@+id/img_indicator7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5sp"
+                    android:src="@drawable/ic_action_next_item"
+                    android:visibility="invisible"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="50sp"
+                android:layout_marginTop="1dp">
+
+            <ImageView
+                    android:id="@+id/img_icon8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5sp"
+                    android:scaleType="fitXY"
+                    android:visibility="invisible"
+                    />
+            <Button
+                    android:id="@+id/searchButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_toLeftOf="@+id/img_indicator8"
+                    android:layout_toRightOf="@+id/img_icon8"
+                    android:text="Search" />
+
+
+            <ImageView
+                    android:id="@+id/img_indicator8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5sp"
+                    android:src="@drawable/ic_action_next_item"
+                    android:visibility="invisible"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+

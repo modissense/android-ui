@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:background="@color/white" >
+
+        <ImageView
+                android:id="@+id/provider"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5sp"
+                android:scaleType="fitXY"
+                 />
+
+        <TextView
+                android:id="@+id/providerText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:layout_toLeftOf="@+id/tv_distance"
+                android:layout_toRightOf="@+id/provider"
+                android:singleLine="true"
+                android:text="ATM SeABank"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        <TextView
+                android:id="@+id/signstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/providerText"
+                android:layout_below="@+id/providerText"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="3sp"
+                android:maxLines="2"
+                android:background="@drawable/round_rect_distance"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="italic" />
+
+        <TextView
+                android:id="@+id/tv_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="2sp"
+                android:background="@drawable/round_rect_distance"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="italic"
+                android:visibility="invisible"/>
+
+        <RatingBar
+                android:id="@+id/ratingBar1"
+                style="@style/small_ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3sp"
+                android:rating="5"
+                android:isIndicator="true"
+                android:layout_alignLeft="@+id/providerText"
+                android:layout_below="@+id/signstatus"
+                android:visibility="invisible"/>
+    </RelativeLayout>
+
+</RelativeLayout>

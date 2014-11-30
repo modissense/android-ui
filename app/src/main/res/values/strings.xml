@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ModisSense</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="add_poi">Add POI</string>
+    <string name="nearest_pois">Nearest POIs</string>
+
+
+
+    <string name="refresh_action">Refresh</string>
+    <string name="logout_action">Logout</string>
+    <string name="page_account">Account</string>
+    <string name="page_map">Map</string>
+    <string name="page_pois">POIs</string>
+    <string name="page_gps">GPS traces</string>
+    <string name="pick_date_start">Start Date</string>
+    <string name="pick_date_end">Date End</string>
+    <string name="pick_coordinates">Pick Coordinates</string>
+    <string name="search">Search</string>
+    <string name="title_pois">Points Of Interest</string>
+    <string name="dlg_remove_poi">Delete this POI?</string>
+
+    <string name="no_accounts">No Accounts Found</string>
+
+    <string name="title_accounts">Connected Accounts</string>
+    <string name="page_checkins">Check In\'s</string>
+    <string name="title_column">Title</string>
+    <string name="location_column">Location</string>
+    <string name="date_column">Date</string>
+
+    <string name="error_loading_accounts">Error Loading Account Info</string>
+    <string name="error_loading_users">Loading users failed</string>
+    <string name="error_loading_news">Loading news failed</string>
+    <string name="error_loading_pois">Loading POIS failed</string>
+
+
+    <string name="no_news">No News</string>
+    <string name="no_pois">No POIs</string>
+
+    <string name="choose">Choose</string>
+
+    <!-- AuthenticatorActivity -->
+    <string name="label_email_address">Email Address</string>
+    <string name="label_password">Password</string>
+    <string name="label_sign_in">Sign In</string>
+    <string name="message_signing_in">Signing in…</string>
+    <string name="message_auth_failed">Please enter a valid password</string>
+
+
+    <string name="home">Home</string>
+    <string name="page_blog">Blog</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+    <string name="no_blogs">No Blogs Found</string>
+    <string name="title_blogs">Blog</string>
+    <string name="page_blog_map">Blog Map</string>
+    <string name="blog">Blog</string>
+    <string name="gpstraces">GPS Traces</string>
+    <string name="account">Account</string>
+    <string name="page_nearest">Near Me</string>
+    <string name="error_loading_blogs">Cannot Load Blogs</string>
+
+    <!-- DSLV -->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="select_remove_mode">Remove modes</string>
+    <string name="select_drag_init_mode">Start-drag modes</string>
+    <string name="select_enables">Enable/Disable</string>
+    <string name="add_header">Add header</string>
+    <string name="add_footer">Add footer</string>
+    <string name="map_trajectory">Map Trajectory</string>
+    <string name="blog_trajectory">Trajectory List</string>
+    <string name="view_map_in_browser">View Map In Browser</string>
+    <string name="no_gps_traces">No GPS traces</string>
+    <string name="title_accounts_username">Username:</string>
+    <string name="title_place_info">Place Information</string>
+    <string name="search_title">Search</string>
+    <string name="share_twitter">Share on Twitter</string>
+    <string name="share_fb">Share on Facebook</string>
+    <string-array name="remove_mode_labels">
+        <item>Click remove</item>
+        <item>Fling remove</item>
+    </string-array>
+    <string-array name="drag_init_mode_labels">
+        <item>On down</item>
+        <item>On drag</item>
+        <item>On long press</item>
+    </string-array>
+    <string-array name="enables_labels">
+        <item>Enable drag</item>
+        <item>Enable sort</item>
+        <item>Enable remove</item>
+    </string-array>
+
+</resources>

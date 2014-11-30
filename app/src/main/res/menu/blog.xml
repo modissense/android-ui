@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:modissense="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/add"
+        android:icon="@drawable/ic_action_new_event"
+        modissense:showAsAction="always"
+        android:title="@string/add_poi"></item>
+
+    <item
+        android:id="@+id/map"
+        android:icon="@drawable/ic_action_map"
+        modissense:showAsAction="always"
+        android:title="@string/map_trajectory"></item>
+
+    <item
+        android:id="@+id/refresh"
+        android:icon="@drawable/ic_action_refresh"
+        modissense:showAsAction="always"
+        android:title="@string/refresh_action"></item>
+
+
+    <item
+            android:id="@+id/sharetwitter"
+            modissense:showAsAction="never"
+            android:title="@string/share_twitter"></item>
+
+    <item
+            android:id="@+id/sharefb"
+            modissense:showAsAction="never"
+            android:title="@string/share_fb"></item>
+
+
+
+</menu>

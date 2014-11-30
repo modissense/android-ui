@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:background="@color/white" >
+
+            <ImageView
+                    android:id="@+id/userImage"
+                    android:layout_width="60sp"
+                    android:layout_height="60sp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5sp"
+                    android:scaleType="fitXY"
+                    />
+
+            <TextView
+                    android:id="@+id/providerText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_toLeftOf="@+id/tv_distance"
+                    android:layout_toRightOf="@+id/userImage"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/username_field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/providerText"
+                    android:layout_below="@+id/providerText"
+                    android:layout_marginRight="5sp"
+                    android:layout_marginTop="3sp"
+                    android:maxLines="2"
+                    android:background="@drawable/round_rect_distance"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:textStyle="italic" />
+
+            <TextView
+                    android:id="@+id/tv_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5sp"
+                    android:layout_marginTop="2sp"
+                    android:background="@drawable/round_rect_distance"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:textStyle="italic"
+                    android:visibility="invisible"/>
+
+            <RatingBar
+                    android:id="@+id/ratingBar1"
+                    style="@style/small_ratingbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3sp"
+                    android:rating="5"
+                    android:isIndicator="true"
+                    android:layout_alignLeft="@+id/providerText"
+                    android:layout_below="@+id/username_field"
+                    android:visibility="invisible"/>
+        </RelativeLayout>
+        <!--<ImageView-->
+                <!--android:id="@+id/userImage"-->
+                <!--android:layout_width="60sp"-->
+                <!--android:layout_height="60sp"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="5sp"-->
+                <!--android:scaleType="fitXY"-->
+                <!--/>-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="left|center_vertical"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:text="@string/title_accounts_username"-->
+            <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+            <!--android:textColor="@color/table_text_header"-->
+            <!--android:textStyle="bold" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/username_field"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:gravity="left|center_vertical"-->
+            <!--android:text=""-->
+            <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+            <!--android:textColor="@color/table_text_header"-->
+            <!--android:textStyle="bold" />-->
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal">
+        <ToggleButton
+                android:id="@+id/gpsbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="Log Gps Traces On"
+                android:textOff="Log Gps Traces Off"
+                />
+
+        <Button
+                android:id="@+id/deleteaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete Account"
+                style="@style/Widget.AppCompat.ActionButton"
+                />
+        <!-- android:onClick="onToggleClicked" -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/title_accounts"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/table_text_header"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@string/date_column"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/table_text_header"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+
+</LinearLayout>

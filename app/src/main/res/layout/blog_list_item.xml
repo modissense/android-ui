@@ -1,0 +1,75 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/normal_height"
+    android:orientation="horizontal"
+    android:baselineAligned="false"
+    >
+    <!--style="@style/ListItemContainerBase"-->
+    <LinearLayout android:id="@+id/block_time_container"
+        android:orientation="vertical"
+        android:layout_width="@dimen/schedule_block_time_width"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+        <!--android:background="@drawable/transparent_background_pattern"-->
+        <TextView android:id="@+id/blog_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_small"
+
+            android:paddingTop="@dimen/text_size_diff_large_small" />
+        <!--android:textColor="@color/body_text_2"-->
+        <TextView android:id="@+id/blog_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_small"
+
+            android:paddingTop="4dp"/>
+        <!--android:textColor="@color/body_text_3"-->
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/list_item_middle_container"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--android:clickable="true"-->
+        <!--android:focusable="true"-->
+
+
+<!--android:background="?activatableItemBackground"-->
+        <TextView android:id="@+id/blog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="?listPreferredItemPaddingLeft"
+            android:layout_marginRight="?listPreferredItemPaddingRight"
+            android:paddingTop="8dp"
+            android:duplicateParentState="true"
+            style="@style/ListItemTitle"
+             />
+        <!---->
+
+        <TextView android:id="@+id/blog_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="?listPreferredItemPaddingLeft"
+            android:layout_marginRight="?listPreferredItemPaddingRight"
+            android:paddingBottom="2dp"
+            android:duplicateParentState="true"
+            style="@style/ListItemSubtitle"
+             />
+        <TextView android:id="@+id/blog_keywords"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="?listPreferredItemPaddingLeft"
+            android:layout_marginRight="?listPreferredItemPaddingRight"
+            android:paddingBottom="8dp"
+            android:duplicateParentState="true"
+            style="@style/ListItemSubtitle"
+            />
+        <!---->
+    </LinearLayout>
+
+
+
+</LinearLayout>

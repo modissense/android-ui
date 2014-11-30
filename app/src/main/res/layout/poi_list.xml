@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:baselineAligned="false"
+    >
+    <!--style="@style/ListItemContainerBase"-->
+    <LinearLayout
+        android:id="@+id/block_time_container"
+        android:orientation="vertical"
+        android:layout_width="@dimen/schedule_block_time_width"
+        android:layout_height="match_parent"
+
+        android:padding="8dp">
+        <!--android:background="@drawable/transparent_background_pattern"-->
+        <TextView
+            android:id="@+id/poiXY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_small"
+
+            android:paddingTop="@dimen/text_size_diff_large_small" />
+        <!--android:textColor="@color/body_text_2"-->
+        <!--<TextView android:id="@+id/blog_end"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="@dimen/text_size_small"-->
+
+        <!--android:paddingTop="4dp"/>-->
+        <!--android:textColor="@color/body_text_3"-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/list_item_middle_container"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+        <!--android:background="?activatableItemBackground"-->
+        <TextView
+            android:id="@+id/poiName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="?listPreferredItemPaddingLeft"
+            android:layout_marginRight="?listPreferredItemPaddingRight"
+            android:paddingTop="8dp"
+            android:duplicateParentState="true"
+            style="@style/ListItemTitle" />
+        <!---->
+
+        <TextView
+            android:id="@+id/poiDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="?listPreferredItemPaddingLeft"
+            android:layout_marginRight="?listPreferredItemPaddingRight"
+            android:duplicateParentState="true"
+            style="@style/ListItemSubtitle"
+            android:paddingBottom="8dp"
+             />
+
+        <TextView
+            android:id="@+id/poiKeywords"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="?listPreferredItemPaddingLeft"
+            android:layout_marginRight="?listPreferredItemPaddingRight"
+            android:duplicateParentState="true"
+            style="@style/ListItemSubtitle"/>
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/poiInterest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="?listPreferredItemPaddingLeft"
+                android:layout_marginRight="?listPreferredItemPaddingRight"
+                android:duplicateParentState="true"
+                style="@style/ListItemSubtitle"/>
+
+            <TextView
+                android:id="@+id/poiHotness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="?listPreferredItemPaddingLeft"
+                android:layout_marginRight="?listPreferredItemPaddingRight"
+                android:duplicateParentState="true"
+                style="@style/ListItemSubtitle"/>
+
+            <TextView
+                android:id="@+id/poiPublic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="?listPreferredItemPaddingLeft"
+                android:layout_marginRight="?listPreferredItemPaddingRight"
+                android:duplicateParentState="true"
+                style="@style/ListItemSubtitle"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<ImageButton android:id="@+id/extra_button"-->
+    <!--android:layout_width="@dimen/list_extra_button_width"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@drawable/list_extra_button_background"-->
+    <!--android:scaleType="center"-->
+    <!--android:src="@drawable/schedule_button_more"-->
+    <!--android:contentDescription="@string/more_sessions" />-->
+
+</LinearLayout>
+
+
